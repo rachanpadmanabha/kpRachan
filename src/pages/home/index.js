@@ -1,5 +1,5 @@
 import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata } from "../../content_option";
 import { Project } from "../portfolio";
@@ -9,18 +9,18 @@ import { About } from "../about";
 import { Socialicons } from "../../components/socialicons";
 import { useTheme } from "../../hooks/themeContext.js";
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 function RealLife(args) {
   const { theme } = useTheme();
-  const getImageSource =
-    theme === 'light' ? true : false;
-  console.log(args)
+  const getImageSource = theme === "light" ? true : false;
+  console.log(args);
   return (
-
-
-    <body className="realLife" >
+    <body className="realLife">
       {/* <Link to="/contact" className="text_2 "> */}
-      <div class="perspective-text" style={{ color: getImageSource ? 'black' : 'white' }}>
+      <div
+        class="perspective-text"
+        style={{ color: getImageSource ? "black" : "white" }}
+      >
         <div class={`perspective-line`}>
           <p className="pop"></p>
           <p className="pop">{` ${args.a1}`}</p>
@@ -44,50 +44,67 @@ function RealLife(args) {
       </div>
       {/* </Link> */}
     </body>
-
-  )
+  );
 }
 
 export const Home = () => {
   const { theme } = useTheme();
   const [flipImage, setFlipImage] = useState(true);
   const [darkImage, setDarkImage] = useState(false);
-  const getImageSource =
-    theme === 'light' ? true : false;
+  const getImageSource = theme === "light" ? true : false;
 
   useEffect(() => {
-    setFlipImage(true)
+    setFlipImage(true);
     setTimeout(() => {
-      setFlipImage(false)
-    }, 2000)
-
+      setFlipImage(false);
+    }, 2000);
   }, [theme]);
   useEffect(() => {
     if (flipImage) {
       setTimeout(() => {
-        setDarkImage(getImageSource)
-      }, 700)
+        setDarkImage(getImageSource);
+      }, 700);
     }
-
   }, [flipImage, getImageSource]);
   return (
     <HelmetProvider>
       <section id="home" className="home">
         <div className="intro_sec d-block d-lg-flex align-items-center">
-          <div className="h_bg-image order-1 order-lg-2 h-100 image-container" style={{ position: 'relative', top: '30px' }}>
-            <svg viewBox="0 0 170 200" xmlns="http://www.w3.org/2000/svg" className="svg-blob">
-              {darkImage ? <image style={{
-                transform: `translate(0, -2%) scale(1.4) ${flipImage ? "rotateY(360deg)" : ""}`,
-                transition: flipImage ? "transform 2s ease-in-out" : "",
-                transformOrigin: 'center',
-                filter: darkImage ? 'grayscale(0%)' : ''
-              }} href={require('./image24.png')} className=" above-section-image order-1 order-lg-2 h-100" /> : <image style={{
-                transform: `translate(0, -2%) scale(1.4) ${flipImage ? "rotateY(360deg)" : ""}`,
-                transition: flipImage ? "transform 2s ease-in-out" : "",
-                transformOrigin: 'center',
-
-              }} href={require('./image22.png')} className=" above-section-image order-1 order-lg-2 h-100" />}
-
+          <div
+            className="h_bg-image order-1 order-lg-2 h-100 image-container"
+            style={{ position: "relative", top: "30px" }}
+          >
+            <svg
+              viewBox="0 0 170 200"
+              xmlns="http://www.w3.org/2000/svg"
+              className="svg-blob"
+            >
+              {darkImage ? (
+                <image
+                  style={{
+                    transform: `translate(0, -2%) scale(1.4) ${
+                      flipImage ? "rotateY(360deg)" : ""
+                    }`,
+                    transition: flipImage ? "transform 2s ease-in-out" : "",
+                    transformOrigin: "center",
+                    filter: darkImage ? "grayscale(0%)" : "",
+                  }}
+                  href={require("./image24.png")}
+                  className=" above-section-image order-1 order-lg-2 h-100"
+                />
+              ) : (
+                <image
+                  style={{
+                    transform: `translate(0, -2%) scale(1.4) ${
+                      flipImage ? "rotateY(360deg)" : ""
+                    }`,
+                    transition: flipImage ? "transform 2s ease-in-out" : "",
+                    transformOrigin: "center",
+                  }}
+                  href={require("./image22.png")}
+                  className=" above-section-image order-1 order-lg-2 h-100"
+                />
+              )}
             </svg>
           </div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
@@ -108,7 +125,12 @@ export const Home = () => {
                     }}
                   />
                 </h1>
-                <p style={{ textAlign: "inherit", hyphens: 'none' }} className="mb-1x">{introdata.description}</p>
+                <p
+                  style={{ textAlign: "inherit", hyphens: "none" }}
+                  className="mb-1x"
+                >
+                  {introdata.description}
+                </p>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
@@ -134,13 +156,12 @@ export const Home = () => {
         <About />
         <Project />
         <ContactUs />
-        <div style={{ display: 'flex' }}> <RealLife a1="SEE" a2="You" a3="in real" a4="life" />
+        <div style={{ display: "flex" }}>
+          {" "}
+          <RealLife a1="SEE" a2="You" a3="in real" a4="life" />
         </div>
         <Socialicons />
       </section>
-
-
-
-    </HelmetProvider >
+    </HelmetProvider>
   );
 };
