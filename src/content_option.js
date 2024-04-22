@@ -148,6 +148,11 @@ const dataportfolio = [
         description: "Comic Character Portal: A portal made for the use of indexing superhero/anime characters' names using MySQL and Pygame.",
         link: "https://github.com/rachanpadmanabha/Comic_Charachter_portal",
     },
+    {
+        img: "https://picsum.photos/400",
+        description: "User friendly Recipe page with minimum HTML and CSS",
+        link: "https://rachanpadmanabha.github.io/Recipe-page/",
+    },
 ];
 
 
