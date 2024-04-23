@@ -158,6 +158,12 @@ const dataportfolio = [
         description: "User friendly Social Links page with minimum HTML and CSS",
         link: "https://rachanpadmanabha.github.io/social-links/",
     },
+    {
+        img: "https://picsum.photos/400/700",
+        description: "User friendly Blog card with minimum HTML and CSS",
+        link: " https://rachanpadmanabha.github.io/blog-card",
+    },
+
 ];
 
 
