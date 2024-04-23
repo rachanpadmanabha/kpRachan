@@ -82,9 +82,8 @@ export const Home = () => {
               {darkImage ? (
                 <image
                   style={{
-                    transform: `translate(0, -2%) scale(1.4) ${
-                      flipImage ? "rotateY(360deg)" : ""
-                    }`,
+                    transform: `translate(0, -2%) scale(1.4) ${flipImage ? "rotateY(360deg)" : ""
+                      }`,
                     transition: flipImage ? "transform 2s ease-in-out" : "",
                     transformOrigin: "center",
                     filter: darkImage ? "grayscale(0%)" : "",
@@ -95,9 +94,8 @@ export const Home = () => {
               ) : (
                 <image
                   style={{
-                    transform: `translate(0, -2%) scale(1.4) ${
-                      flipImage ? "rotateY(360deg)" : ""
-                    }`,
+                    transform: `translate(0, -2%) scale(1.4) ${flipImage ? "rotateY(360deg)" : ""
+                      }`,
                     transition: flipImage ? "transform 2s ease-in-out" : "",
                     transformOrigin: "center",
                   }}
@@ -140,7 +138,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/Resume.pdf" target="_blank">
+                  <Link to="/Rachan-Resume-2024.pdf" target="_blank">
                     <div id="button_h" className="ac_btn btn">
                       Resume
                       <div className="ring one"></div>
