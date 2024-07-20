@@ -138,7 +138,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/Rachan-Resume-2024.pdf" target="_blank">
+                  <Link to="/Rachan-Swe-FE.pdf" target="_blank">
                     <div id="button_h" className="ac_btn btn">
                       Resume
                       <div className="ring one"></div>
