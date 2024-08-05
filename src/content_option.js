@@ -170,7 +170,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "padmarachan@gmail.com",
     description: "Get in touch with me by filling the form or connecting with me through email or phone.",
-    YOUR_SERVICE_ID: "service_odfj5ry",
+    YOUR_SERVICE_ID: "service_y2i4ysl",
     YOUR_TEMPLATE_ID: "template_d2b2nex",
     YOUR_USER_ID: "w5IPHUz9KHxUkjmaR",
 };
