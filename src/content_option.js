@@ -7,7 +7,7 @@ const meta = {
 const introdata = {
     title: "Rachan Padmanabha",
     animated: {
-        first: "FrontEnd Developer",
+        first: "Frontend Engineer",
         second: "Application Developer",
         third: "Debugging Specialist",
     },
@@ -20,13 +20,13 @@ const dataabout = {
     aboutme: "Greetings, esteemed individuals! I am Rachan, an ardent and accomplished programmer endowed with the unique capability to comprehend programs from the vantage point of machinery almost instantaneously. My aptitude for rapid learning and adaptability defines my approach. A resounding 'Yes' resonates with every challenge, transforming obstacles into strategic steps towards triumph and success.",
 };
 const worktimeline = [{
-    jobtitle: "Technical Product Analyst - 1",
+    jobtitle: "Frontend Engineer",
     where: "Juspay Technologies",
     link: "https://juspay.in/",
     date: "2022",
 },
 {
-    jobtitle: "Technical Product Analyst - Intern",
+    jobtitle: "Software Engineer - Intern",
     where: "Juspay Technologies",
     link: "https://juspay.in/",
     date: "2021",
@@ -59,7 +59,7 @@ const skills = [{
 },
 {
     name: "Django",
-    value: 85,
+    value: 65,
 },
 
 ];
