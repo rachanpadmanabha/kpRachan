@@ -100,6 +100,21 @@ const dataportfolio = [
     },
     {
         img: "https://picsum.photos/400",
+        description: "Kanban Board: Made using DND kit",
+        link: "https://kanban-board-9f113.web.app/",
+    },
+    {
+        img: "https://picsum.photos/400/600",
+        description: "ChatBot Flow Fuilder: Made using React; Dnd library",
+        link: "https://chatbot-flow-builder-d403d.web.app/",
+    },
+    {
+        img: "https://picsum.photos/400/300",
+        description: "Weekday Clone: cloned the UI of Weekday job listing",
+        link: "https://weekday-assignment.web.app/",
+    },
+    {
+        img: "https://picsum.photos/400",
         description: "POSEMATE: App made using Flutter to track different yoga poses in real time.",
         link: "https://github.com/rachanpadmanabha/flutter_posemate",
     },
